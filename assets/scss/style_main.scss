@@ -1,0 +1,68 @@
+@import "components/colors";
+$enable-responsive-font-sizes: true !default;
+$font-family-sans-serif: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+    "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$transition: all 0.3s ease;
+$print-page-size: a4 !default;
+$font-size-base: 0.875rem !default;
+$grid-gutter-width: 1rem !default;
+$custom-control-indicator-checked-bg: $green !default;
+$card-spacer-y: 1rem !default;
+$card-spacer-x: 1rem !default;
+$grid-gutter-width: 32px !default;
+$nav-tabs-link-active-color: $gray-600 !default;
+$h1-font-size: $font-size-base * 2 !default;
+$h2-font-size: $font-size-base * 1.75 !default;
+$h3-font-size: $font-size-base * 1.5 !default;
+$h4-font-size: $font-size-base * 1.5 !default;
+$h5-font-size: $font-size-base * 1.25 !default;
+$h6-font-size: $font-size-base !default;
+$grid-gutter-width: 30px !default;
+$grid-breakpoints: (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1400px,
+) !default;
+$container-max-widths: (
+    sm: 540px,
+    md: 720px,
+    lg: 960px,
+    xl: 1140px,
+    xxl: 1320px,
+) !default;
+// @alert-padding: 10px;
+// @jumbotron-bg: #fff;
+// @jumbotron-heading-font-size: ceil((@font-size-base * 1.5));
+// @jumbotron-font-size: ceil((@font-size-base));
+
+@import "~bootstrap/scss/bootstrap";
+@import "components/animations";
+@import "components/common_helpers";
+@import "components/custom_styles";
+@import "components/default_overrides";
+@import "components/form";
+@import "components/css_icons";
+@import "components/custom_elements";
+@import "components/layout_master.scss";
+@import "components/svg.scss";
+@import "components/chatbot.scss";
+@import "components/temp.scss";
+@import "components/thirdparty.scss";
+@import "~react-toastify/dist/ReactToastify.min.css";
+@import "components/chat.scss";
+@import "components/reactQuill.scss";
+@import "components/reactUppyCore.scss";
+@import "components/reactChipTags.scss";
+@import "components/reactTagAutocomplete.scss";
+@import "components/reactDatePicker.scss";
+@import "components/temp_new.scss";
+@import "components/reactQuillBubble.scss";
+@import "components/reactRangeSlider.scss";
+@import "components/cloudTags.scss";
+@import "components/reactCarousel.scss"
+
+
+// import "react-toastify/dist/ReactToastify.min.css";

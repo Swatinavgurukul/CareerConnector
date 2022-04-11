@@ -1,0 +1,26 @@
+.chat {
+    height: 500px;
+}
+// .footer-chat {
+//     height: 130px;
+// }
+.history-height {
+    height: 303px;
+}
+.bot-message {
+    background-color: #6c757d1a;
+    padding: 7px 9px;
+    font-size: 13px;
+    border-radius: 0px 15px 15px 15px;
+}
+.bot-usr-msg {
+    border-radius: 15px 0px 15px 15px;
+}
+.chat-header {
+    background-color: #6c757d61;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}

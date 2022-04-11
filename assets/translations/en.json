@@ -1,0 +1,15 @@
+{
+    "layout": {
+        "homepage": "Homepage",
+        "jobs": "jobs",
+        "profile": "Profile",
+        "logout": "Logout",
+        "login": "Login",
+        "dashboard": "Dashboard",
+        "recruiter": "Recruiter",
+        "candidates": "Candidates",
+        "applications": "Applications",
+        "interview": "Interview",
+        "reports": "Reports"
+    }
+}

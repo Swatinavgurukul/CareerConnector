@@ -1,0 +1,204 @@
+// Layout specific Stylings
+#right_sidebar {
+	transition: all 1s;
+}
+
+.collasped {
+	max-width: 0px;
+	min-width: 0px;
+	width: 0%;
+}
+
+.sidebar {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	height: 100vh;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+// Nav tab
+.nav-underline-primary > .nav-item {
+	border-top: 0px;
+	border-left: 0px;
+	border-right: 0px;
+	border-bottom: 2px solid transparent;
+	color: $gray-600;
+}
+
+.nav-underline-primary > .nav-item:hover {
+	border: 0px;
+	margin-bottom: 0px;
+	border-bottom: 1px solid transparent;
+	background: $gray-100;
+	color: $dark;
+}
+
+.nav-underline-primary > .nav-item.active {
+	border-top: 0px;
+	border-left: 0px;
+	border-right: 0px;
+	border-bottom: 2px solid $blue;
+	margin-bottom: 0px;
+	color: $dark;
+}
+
+// Jumbotron
+.empty-state-image {
+	width: 15rem;
+	margin: 0 auto;
+}
+
+// SVG Icons
+// Generates svg-primary, svg-default, svg-danger, etc SVG Color Helper Classes
+@mixin svg-color-variant($parent, $color) {
+	#{$parent} {
+		fill: $color !important;
+	}
+
+	@if $emphasized-link-hover-darken-percentage !=0 {
+		#{$parent} {
+			@include hover-focus {
+				fill: darken($color, $emphasized-link-hover-darken-percentage) !important;
+			}
+		}
+	}
+}
+
+@each $color, $value in $theme-colors {
+	@include svg-color-variant(".svg-#{$color}", $value);
+}
+
+.no-outline {
+	border: 0px;
+}
+
+.btn-svg-image {
+	width: $font-size-base;
+	height: $font-size-base;
+}
+
+.btn-svg {
+	padding: $font-size-base * 0.45 $font-size-base * 0.75;
+}
+
+.btn-svg > svg {
+	width: $font-size-base * 1.5;
+	height: $font-size-base * 1.3;
+	fill: currentColor;
+}
+
+.btn-svg > span {
+	display: inline-block;
+	top: $font-size-base / 8;
+	position: relative;
+}
+
+.btn-svg-sm {
+	padding: $font-size-base * 0.45 * 0.8 $font-size-base * 0.75 * 0.8;
+}
+
+.btn-svg-sm > svg {
+	width: $font-size-base * 1.5 * 0.8;
+	height: $font-size-base * 1.3 * 0.8;
+	fill: currentColor;
+}
+
+.btn-svg-sm-txt {
+	display: inline-block;
+	top: $font-size-base * 0.8 / 8;
+	position: relative;
+}
+
+.btn-svg > svg:hover, .btn-svg-sm > svg:hover {
+	fill: currentColor;
+}
+
+.btn-no-click {
+	pointer-events: none;
+}
+
+.list-icon-1x1 {
+	width: 1.2rem;
+	height: 1.2rem;
+	cursor: pointer;
+}
+
+.list-text-1x1 {
+	top: 2px;
+	position: relative;
+}
+
+.settings-tab:active {
+	color: #0c0d0e !important;
+	text-decoration: none !important;
+	background-color: #f8f9fa !important;
+	border: 1px solid #0056b3;
+}
+
+.pl-two-point-five {
+	padding-left: 2.5rem;
+}
+
+.profile-input-height {
+	height: 4.0rem;
+}
+
+.select-box {
+	width: 74px;
+}   
+
+.select-box-width {
+	width: 117px;
+} 
+
+.img-hover:hover{
+	filter: grayscale(1);
+}
+
+.social-icon-gray {
+	filter: invert(0.2) sepia(1) saturate(0) hue-rotate(175deg);
+}
+
+.table-min-width {
+	min-width: 11.5rem;
+}
+
+.dropdown-height {
+	  height: 138px;
+	  width: 297px;
+}
+.dropdown_item:hover{
+	background-color: #bbc0c4 !important;
+	color: black !important;
+}
+
+.notification-buttons{
+	position: sticky;
+	bottom: 0px;
+	background-color:white;
+	z-index: 2;
+}
+
+.candidateTable thead th:nth-of-type(2) {
+	position: sticky;
+	left: 0rem;
+	z-index: 2;
+	background-color: #2d2e2f;
+  }
+
+.candidateTable tr td:nth-child(2) {
+	position: sticky;
+	left: 0rem;
+	z-index: 1;
+	background: white;
+  } 
+
+.vertical { 
+	border-left: 2px solid #d6d9dc;
+	 height: 115px;
+	 border-top: 1px solid #d6d9dc;
+	 width: 10px;
+	 border-bottom: 1px solid #d6d9dc;
+ } 

@@ -1,0 +1,155 @@
+.home-header {
+    background-color: #000000;
+    position: relative;
+ }
+
+.home-content { 
+    position: absolute; 
+    top: 65%;
+    width: 55%;
+}
+
+.header-title {
+    font-size: 2.8vw;
+    font-weight: 700;
+}
+
+.home-title {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.search img {
+    position: relative;
+    top: -33px;
+    left: 8px;
+    opacity: 0.4;
+}
+
+.jobs-content {
+    border-radius: 25px;
+    box-shadow:0 .25rem .25rem rgba(78, 62, 62, 0.25);
+}
+
+.jobs-content img.rounded-right {
+    border-top-right-radius: 25px !important;
+    border-bottom-right-radius: 25px !important;
+}
+
+.jobs-content img.rounded-left {
+    border-top-left-radius: 25px !important;
+    border-bottom-left-radius: 25px !important;
+}
+
+.trending-jobs img, .card-deck img, .client img {
+    border-radius: 20px;
+}
+
+.trending-jobs .content {
+    position: absolute;
+    bottom: 0;
+    left: 8%;
+}
+
+.bg-light-blue {
+    background-color: rgba(79, 119, 252, 0.05);
+}
+
+.client {
+    background: linear-gradient(90.23deg, rgba(79, 119, 252, 0.8) -4.01%, rgba(172, 89, 255, 0.8) 106.16%);
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    padding: 30px;
+    margin-top: 150px;
+    max-height: 350px;
+}
+
+.client-img {
+    position: relative;
+    top: -30%;
+}
+
+.border-radius-style {
+    border-radius: 0px;
+    padding-left: 33px;
+}
+.border-left-radius-style {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;    
+}
+
+.border-right-radius-style {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    padding-left: 33px;
+}
+
+.homenew-location input {
+    border-radius: 0;
+    padding-left: 30px;
+}
+
+@media only screen and (max-width: 768px) {
+    .header-title {
+        font-size: 1.5rem;
+    }
+
+    .home-content {
+        top: 50%;
+        position: relative;
+        margin-top: -20%;
+        margin-right: -0.5rem;
+        margin-left: -0.5rem;
+        padding-bottom: 0.5rem;
+        background: transparent;
+        background: -webkit-linear-gradient(to bottom, transparent 0%, #000000 50%);
+        background: -moz-linear-gradient(to bottom, transparent 0%, #000000 50%);
+        background: linear-gradient(to bottom, transparent 0%, #000000 50%);
+        width: 100%;
+    }
+
+    .jobs-content {
+        border-radius: 0px;
+        
+    }
+
+    .jobs-content img.rounded-right {
+        border-top-right-radius: 0 !important;
+        border-bottom-right-radius: 0 !important;
+    }
+    
+    .jobs-content img.rounded-left {
+        border-top-left-radius: 0 !important;
+        border-bottom-left-radius: 0 !important;
+    }
+
+    .trending-jobs img, .card-deck img, .client img {
+        border-radius: 0px;
+    }
+
+    .client {
+        border-radius: 0px;
+        padding: 20px;
+        margin-top: 20px;
+        max-height: 100%;
+    }
+    .border-radius-style {
+        border-radius: 0.25rem;
+    }
+    .border-left-radius-style {
+        border-top-left-radius: 0.25rem;
+        border-bottom-left-radius: 0.25rem;
+    }
+    
+    .border-right-radius-style {
+        border-top-right-radius: 0.25rem;
+        border-bottom-right-radius: 0.25rem;
+    }
+
+    .homenew-location input {
+        border-radius: 0.25rem;
+    }
+    .profile-view-dash{
+        height: auto !important;
+    }
+}

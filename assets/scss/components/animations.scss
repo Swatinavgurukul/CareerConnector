@@ -1,0 +1,247 @@
+// Skeleton Glow - For Loading Content
+@-webkit-keyframes skeleton-glow {
+	0% {
+		border-color: rgba(206, 217, 224, 0.2);
+		background: rgba(206, 217, 224, 0.2);
+	}
+
+	to {
+		border-color: rgba(92, 112, 128, 0.2);
+		background: rgba(92, 112, 128, 0.2);
+	}
+}
+
+@keyframes skeleton-glow {
+	0% {
+		border-color: rgba(206, 217, 224, 0.2);
+		background: rgba(206, 217, 224, 0.2);
+	}
+
+	to {
+		border-color: rgba(92, 112, 128, 0.2);
+		background: rgba(92, 112, 128, 0.2);
+	}
+}
+
+.skeleton-glow {
+	border-color: rgba(206, 217, 224, 0.2) !important;
+	border-radius: 2px;
+	-webkit-box-shadow: none !important;
+	box-shadow: none !important;
+	background: rgba(206, 217, 224, 0.2);
+	background-clip: padding-box !important;
+	cursor: default;
+	color: transparent !important;
+	-webkit-animation: skeleton-glow 0.9s linear infinite alternate;
+	animation: skeleton-glow 0.9s linear infinite alternate;
+	pointer-events: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.skeleton-glow *, .skeleton-glow::after, .skeleton-glow::before {
+	visibility: hidden !important;
+}
+
+//Flip X
+.animated-flip {
+	-webkit-transition: 0.6s;
+	-webkit-transform-style: preserve-3d;
+	-moz-transition: 0.6s;
+	-moz-transform-style: preserve-3d;
+	-o-transition: 0.6s;
+	-o-transform-style: preserve-3d;
+	transition: 0.6s ease-out;
+	transform-style: preserve-3d;
+}
+
+.animated-flip.active {
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+	-o-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+}
+
+// Tactile Button - Has click effect like physical buttons
+.btn-tactile {
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+.btn-tactile:active {
+	-webkit-transform: translateY(2px);
+	-moz-transform: translateY(2px);
+	-ms-transform: translateY(2px);
+	transform: translateY(2px);
+}
+
+// Tada Button - Seeking attention to save form
+@keyframes tada {
+	from {
+		transform: scale3d(1, 1, 1);
+	}
+
+	2%, 4% {
+		transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+	}
+
+	6%, 10%, 14%, 18% {
+		transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+	}
+
+	8%, 12%, 16% {
+		transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+	}
+
+	to {
+		transform: scale3d(1, 1, 1);
+	}
+}
+
+.tada {
+	-webkit-animation: tada 5s infinite;
+	animation: tada 5s infinite;
+}
+
+// Card and Card Helpers
+.card {
+	transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+// hover elevation start
+.hover-elevation-1:hover {
+	transform: translateY(-2px);
+}
+
+.hover-elevation-2:hover {
+	transform: translateY(-4px);
+}
+
+.hover-elevation-3:hover {
+	transform: translateY(-6px);
+}
+
+.hover-elevation-4:hover {
+	transform: translateY(-8px);
+}
+
+// elevation 1 to 4 start
+.hover-elevation-1:hover, .elevation-1 {
+	border: 0px;
+	-webkit-box-shadow: 0 1px 3px hsla(0, 0%, 0%, 0.2);
+	box-shadow: 0 1px 3px hsla(0, 0%, 0%, 0.2);
+}
+
+.hover-elevation-2:hover, .elevation-2 {
+	border: 0px;
+	-webkit-box-shadow: 0 4px 6px hsla(0, 0%, 0%, 0.2);
+	box-shadow: 0 4px 6px hsla(0, 0%, 0%, 0.2);
+}
+
+.hover-elevation-3:hover, .elevation-3 {
+	border: 0px;
+	-webkit-box-shadow: 0 5px 15px hsla(0, 0%, 0%, 0.2);
+	box-shadow: 0 5px 15px hsla(0, 0%, 0%, 0.2);
+}
+
+.hover-elevation-4:hover, .elevation-4 {
+	border: 0px;
+	-webkit-box-shadow: 0 10px 24px hsla(0, 0%, 0%, 0.2);
+	box-shadow: 0 10px 24px hsla(0, 0%, 0%, 0.2);
+}
+
+// elevation 1 to 4 end
+// hover elevation hover end
+// ball pluse css start here
+.ball-pulse > div {
+	width: 15px;
+	height: 15px;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+
+.ball-pulse > div:nth-child(1) {
+	-webkit-animation: scale 0.75s -0.24s infinite cubic-bezier(0.2, 0.68, 0.18, 1.08);
+	animation: scale 0.75s -0.24s infinite cubic-bezier(0.2, 0.68, 0.18, 1.08);
+}
+
+.ball-pulse > div:nth-child(2) {
+	-webkit-animation: scale 0.75s -0.12s infinite cubic-bezier(0.2, 0.68, 0.18, 1.08);
+	animation: scale 0.75s -0.12s infinite cubic-bezier(0.2, 0.68, 0.18, 1.08);
+}
+
+.ball-pulse > div:nth-child(3) {
+	-webkit-animation: scale 0.75s 0s infinite cubic-bezier(0.2, 0.68, 0.18, 1.08);
+	animation: scale 0.75s 0s infinite cubic-bezier(0.2, 0.68, 0.18, 1.08);
+}
+
+// ball pluse css end here
+// Animated Search
+.animated-search {
+	margin-top: 1rem;
+	cursor: pointer;
+	cursor: default;
+	outline: none;
+	height: 3em;
+	width: 3em;
+	font-size: 1em;
+	border-radius: 50%;
+	color: #212121;
+	border: 1px solid #ffffff;
+	transition: all 0.2s ease-in;
+}
+
+.animated-search:focus {
+	width: 16em;
+	padding-left: 1em;
+	padding-right: 2.5em;
+	transition: all 0.2s ease-in;
+	border-radius: 10px;
+	border: 1px solid #cccccc;
+}
+
+.animated-search-icon {
+	width: 1.5rem;
+	left: -2.5em;
+	cursor: pointer;
+	color: white;
+	position: relative;
+	pointer-events: none;
+}
+
+// Loader Button
+.bouncingLoader > div, .bouncingLoader:before, .bouncingLoader:after {
+	display: inline-block;
+	width: 0.5rem;
+	height: 0.5rem;
+	background: #ffffff;
+	margin-bottom: -0.25rem;
+	border-radius: 50%;
+	animation: bouncing-loader 0.6s infinite alternate;
+}
+
+.bouncingLoader > div, .bouncingLoader:before, .bouncingLoader:after {
+	content: "";
+}
+
+.bouncingLoader > div {
+	margin: 0 0.25rem;
+}
+
+.bouncingLoader > div {
+	animation-delay: 0.2s;
+}
+
+.bouncingLoader:after {
+	animation-delay: 0.4s;
+}
+
+@keyframes bouncing-loader {
+	to {
+		// opacity: 0.1;
+		transform: translate3d(0, -0.75rem, 0);
+	}
+}

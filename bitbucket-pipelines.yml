@@ -1,0 +1,46 @@
+# Only use spaces to indent your .yml configuration.
+# -----
+image: python:3.9.0
+
+pipelines:
+  branches:
+    dev:
+      - parallel:
+        - step:
+            name: "Deployment to Dev Server"
+            deployment: testing
+            script:
+            - ssh root@$dev_ip 'sh /var/www/directsourcing/assets/scripts/devdeploy.sh'
+            - echo "Deployed to Dev Server !"
+        - step:
+            name: Deployment to Staging Server
+            trigger: manual
+            script:
+              - ssh root@$STAGING_SERVER_IP 'sh /var/www/project/assets/scripts/stagingdeploy.sh'
+              - echo "Deployed to Staging Server !"
+              #- echo "Deployed to Staging Server off !"
+        - step:
+            name: "SonarQube Analysis"
+            script:
+            - ssh root@$sonarqube_ip 'sh /var/www/directsourcing/assets/scripts/sonarqube.sh'
+            - echo "SonarQube Analyzed !"
+    feature/UAT:
+      - step:
+          name: Deployment to UAT Server
+          script:
+            - ssh root@$UAT_SERVER_IP 'sh /var/www/project/assets/scripts/uatdeploy.sh'
+            - echo "Deployed to UAT Server !"
+    feature/demo:
+      - parallel:
+        - step:
+            name: Deployment to Staging Server
+            script:
+              # - ssh root@$STAGING_SERVER_IP 'sh /var/www/project/assets/scripts/stagingdeploy.sh'
+              # - echo "Deployed to Staging Server !"
+              - echo "Deployed to Staging Server off !"
+        - step:
+            name: Deployment to Demo Server
+            trigger: manual
+            script:
+              - ssh root@$DEMO_SERVER_IP 'sh /var/www/project/assets/scripts/demodeploy.sh'
+              - echo "Deployed to Demo Server !"

@@ -1,0 +1,45 @@
+.profile.icon {
+	position: absolute;
+	width: 14px;
+	height: 8px;
+	box-sizing: border-box;
+	border-top: solid 1.5px currentColor;
+	border-right: solid 1.5px currentColor;
+	border-left: solid 1.5px currentColor;
+	border-radius: 6px 6px 0px 0px;
+}
+
+.profile.icon::before {
+	position: absolute;
+	top: -10px;
+	left: 1px;
+	width: 8px;
+	height: 8px;
+	box-sizing: border-box;
+	content: "";
+	border: solid 1.5px currentColor;
+	border-radius: 50%;
+}
+
+.lock.icon {
+	position: absolute;
+	width: 14px;
+	height: 9px;
+	box-sizing: border-box;
+	border: solid 1.5px currentColor;
+	border-radius: 1px;
+}
+
+.lock.icon::before {
+	position: absolute;
+	top: -8px;
+	left: 2px;
+	width: 7px;
+	height: 6px;
+	box-sizing: border-box;
+	content: "";
+	border-top: solid 1.5px currentColor;
+	border-right: solid 1.5px currentColor;
+	border-left: solid 1.5px currentColor;
+	border-radius: 6px 6px 0 0;
+}

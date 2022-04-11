@@ -1,0 +1,40 @@
+.chat-bot-avatar {
+	width: 42px;
+	height: 45px;
+	border-radius: 50%;
+	background-color: purple;
+}
+.chat-bot-header {
+	background-color: purple;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+.carousel-control-prev-icon, .carousel-control-next-icon {
+	height: 100px;
+	width: 100px;
+	/* outline: black; */
+	background-size: 100%, 100%;
+	border-radius: 50%;
+	/* border: 1px solid black; */
+	background-image: none;
+}
+
+.carousel-control-next-icon:after {
+	content: "\f054";
+	position: absolute;
+	top: 50%;
+	font-family: "Font Awesome\ 5 Free";
+	font-weight: 900;
+	font-size: 20px;
+	color: rgb(66, 96, 197);
+}
+
+.carousel-control-prev-icon:after {
+	content: "\f053";
+	position: absolute;
+	top: 50%;
+	font-family: "Font Awesome\ 5 Free";
+	font-weight: 900;
+	font-size: 20px;
+	color: rgb(66, 96, 197);
+}

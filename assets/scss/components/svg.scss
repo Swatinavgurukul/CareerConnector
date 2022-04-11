@@ -1,0 +1,61 @@
+.svg-lg-x3 {
+    width: 5rem;
+    height: 5rem;
+}
+.svg-lg-x2 {
+    width: 3.5rem;
+    height: 3.5rem;
+}
+
+.svg-lg {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+.svg-lg-x1 {
+    width: 4rem;
+    height: 4rem;
+}
+.svg-sm {
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+.svg-md {
+    width: 1.8rem;
+    height: 1.8rem;
+}
+
+.svg-xs {
+    width: 1rem;
+    height: 1rem;
+}
+
+.invert-color {
+    filter: invert(1);
+}
+
+.svg-disabled {
+    filter: grayscale(1);
+    opacity: 0.2;
+}
+
+.icon-blue {
+    filter: invert(0.5) sepia(1) saturate(15) hue-rotate(175deg);
+}
+
+.svg-gray {
+    opacity: 70%;
+}
+
+.svg-md-2 {
+    width: 1.9rem;
+    height: 1.9rem;
+}
+.svg-xs-1 {
+    width: 0.6rem;
+    height: 0.6rem;
+}
+.svg-sm-1 {
+    width: 1.6rem;
+    height: 1.6rem;
+}

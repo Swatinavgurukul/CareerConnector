@@ -1,0 +1,15 @@
+{
+    "layout": {
+        "homepage": "홈페이지",
+        "jobs": "취직자리",
+        "profile": "非常感謝",
+        "login": "로그인",
+        "logout": "非常感謝",
+        "dashboard": "非常感謝",
+        "recruiter": "신입생",
+        "candidates": "입후보자",
+        "applications": "응용 프로그램",
+        "interview": "회견",
+        "reports": "보고서"
+    }
+}

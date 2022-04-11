@@ -1,0 +1,610 @@
+// Remove browser focus halo
+.btn.focus, .btn:focus {
+	outline: 0;
+	box-shadow: none;
+}
+
+input[type="radio"i]:focus {
+	outline: none;
+	outline-offset: none;
+	outline-style: none;
+}
+
+// Common
+.form-primary-bg > .form-control, .form-dark-bg > .form-control {
+	color: $white !important;
+	background: transparent !important;
+}
+
+.form-group.animated > .form-control {
+	font-size: 1rem;
+	line-height: 1.5rem;
+	min-height: 2.625rem;
+}
+
+.form-group.animated.form-primary-bg > .form-control > option, .form-group.animated.form-dark-bg > .form-control > option {
+	color: #212121 !important;
+	background: transparent !important;
+}
+
+.form-dark-bg > label, .form-primary-bg > label {
+	color: $white !important;
+}
+
+/// form control disabled css
+.form-group.animated.disabled > .form-label-active {
+	background: linear-gradient(0deg, $gray-200 50%, transparent 50%) !important;
+}
+
+.form-primary-bg > .form-control:disabled, .form-dark-bg > .form-control:disabled {
+	background: hsla(100, 100%, 100%, 0.2) !important;
+}
+
+/// form control disabled css
+// Form primary-bg
+.form-primary-bg > .form-label-active {
+	background: linear-gradient(0deg, $primary 50%, transparent 50%) !important;
+}
+
+.form-group.animated.form-primary-bg.disabled > .form-label-active {
+	background: linear-gradient(0deg, #3785ce 50%, transparent 50%) !important;
+}
+
+// Form dark-bg
+.form-dark-bg > .form-label-active {
+	background: linear-gradient(0deg, $gray-800 50%, transparent 50%) !important;
+}
+
+.form-group.animated.form-dark-bg.disabled > .form-label-active {
+	background: linear-gradient(0deg, #5d6166 50%, transparent 50%) !important;
+}
+
+.form-group.animated.form-dark-bg, .form-group.animated.form-primary-bg {
+	color: $gray-100;
+}
+
+/// Form dark-bg
+
+.form-primary-bg .block-radio-heading, .form-dark-bg .block-radio-heading {
+	color: $gray-100;
+}
+
+.form-primary-bg .block-body, .form-dark-bg .block-body {
+	color: $gray-100;
+}
+
+.form-primary-bg .custom-checkbox-text, .form-dark-bg .custom-checkbox-text {
+	color: $gray-100;
+}
+
+.form-primary-bg ::placeholder, .form-dark-bg ::placeholder {
+	color: $gray-100;
+}
+
+// Animated Form Label
+.form-group.animated {
+	margin-bottom: 0rem;
+	-webkit-transition: border-color ease-in-out 0.3s, box-shadow ease-in-out 0.3s;
+	-webkit-transition: border-color ease-in-out 0.3s, -webkit-box-shadow ease-in-out 0.3s;
+	transition: border-color ease-in-out 0.3s, -webkit-box-shadow ease-in-out 0.3s;
+	transition: border-color ease-in-out 0.3s, box-shadow ease-in-out 0.3s;
+	transition: border-color ease-in-out 0.3s, box-shadow ease-in-out 0.3s, -webkit-box-shadow ease-in-out 0.3s;
+}
+
+.form-group.animated > label {
+	position: relative;
+	top: 2.5rem;
+	margin: 0.25rem 1rem 0.5rem 1rem;
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	-webkit-appearance: none;
+}
+
+.form-group.animated > .form-label-active {
+	top: 1rem;
+	margin: 0.375rem 0.55rem;
+	padding: 0rem 0.25rem;
+	background: linear-gradient(0deg, $white 50%, transparent 50%);
+	color: $success;
+}
+
+.form-group.animated > .form-control:focus {
+	color: $gray-800;
+	border-color: $success;
+	outline: 0;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+/// Animated Form Label end
+// Select Dropdown start
+.form-group.animated > select {
+	height: 2.625rem;
+}
+
+// Select Dropdown end
+// Input Group Prepend + Append
+.input-group {
+	margin-top: 2.0625rem;
+}
+
+.input-group > .form-control, .input-group > .input-group-prepend > .input-group-text, .input-group > .input-group-append > .input-group-text {
+	line-height: 1.5rem;
+	font-size: 1rem;
+	min-height: 2.625rem;
+}
+
+/// Input Group Prepend + Append end
+// Custom Range
+.form-group.animated > .custom-range-label {
+	font-size: 1rem;
+	margin: 0rem 0rem 0.5rem 0rem;
+}
+
+.form-group.animated > .custom-range {
+	margin-top: 2.5rem;
+}
+
+/// Custom Range end
+/// Custom File css start
+.form-group.animated > .custom-file {
+	height: 4.6875rem;
+	min-height: 2.625rem;
+}
+
+.form-group.animated > .custom-file > .custom-file-label {
+	font-size: 1rem;
+	padding: 0.5rem 0.75rem;
+	margin-top: 2.0625rem;
+	margin-bottom: 0rem;
+	background: transparent;
+	white-space: nowrap;
+	overflow: hidden;
+	min-height: 2.625rem;
+}
+
+.custom-file-label::after {
+	min-height: 2.625rem;
+	padding: 0.5rem 0.75rem;
+}
+
+.form-group.animated.form-primary-bg > .custom-file > .custom-file-label, .form-group.animated.form-dark-bg > .custom-file > .custom-file-label {
+	color: $gray-100;
+}
+
+input:-internal-autofill-selected {
+	background-color: $white !important;
+}
+
+/// Custom File css end
+//  Range Slider
+input[type="range"]::-webkit-slider-runnable-track {
+	width: 100%;
+	cursor: pointer;
+	background: transparent;
+	border: 1px solid $gray-400;
+	margin-bottom: 1rem;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	background: $success;
+	cursor: pointer;
+}
+
+///  Range Slider end
+//Custom Checkbox start
+@-webkit-keyframes check {
+	0% {
+		width: 0;
+		height: 0;
+	}
+
+	25% {
+		width: 0.4rem;
+		height: 0;
+	}
+
+	50% {
+		width: 0.4rem;
+		height: 0.7rem;
+	}
+}
+
+@-moz-keyframes check {
+	0% {
+		width: 0;
+		height: 0;
+	}
+
+	25% {
+		width: 0.4rem;
+		height: 0;
+	}
+
+	50% {
+		width: 0.4rem;
+		height: 0.7rem;
+	}
+}
+
+@-ms-keyframes check {
+	0% {
+		width: 0;
+		height: 0;
+	}
+
+	25% {
+		width: 0.4rem;
+		height: 0;
+	}
+
+	50% {
+		width: 0.4rem;
+		height: 0.7rem;
+	}
+}
+
+@keyframes check {
+	0% {
+		width: 0;
+		height: 0;
+	}
+
+	35% {
+		width: 0.4rem;
+		height: 0;
+	}
+
+	50% {
+		width: 0.4rem;
+		height: 0;
+	}
+
+	100% {
+		width: 0.4rem;
+		height: 0.8rem;
+	}
+}
+
+// custom-checkbox css
+.form-group.animated > .custom-checkbox:first-child {
+	margin-top: 2.0625rem;
+}
+
+.form-group.animated > .custom-checkbox:last-child {
+	margin-bottom: 0rem;
+}
+
+.form-group.animated.d-flex > .custom-checkbox {
+	margin-top: 2.0625rem;
+	margin-bottom: 0rem;
+	margin-right: 1rem;
+}
+
+.custom-checkbox {
+	margin-bottom: 1rem;
+	display: block;
+	position: relative;
+	padding-left: 0;
+}
+
+.custom-checkbox > .form-check-input {
+	display: none;
+}
+
+.custom-checkbox > .custom-checkbox-text {
+	display: inline-block;
+	top: 0.1rem;
+	position: absolute;
+	padding-bottom: 0.5rem;
+}
+
+.custom-checkbox > .form-check-label {
+	border-radius: 0.25rem;
+	position: relative;
+	display: inline-block;
+	width: 1.44rem;
+	height: 1.44rem;
+	margin-right: 0.4rem;
+	vertical-align: middle;
+	cursor: pointer;
+	background: $white;
+	border: 1px solid $gray-400;
+	-webkit-transition: border-color ease-in-out 0.3s, box-shadow ease-in-out 0.3s;
+	-webkit-transition: border-color ease-in-out 0.3s, -webkit-box-shadow ease-in-out 0.3s;
+	transition: border-color ease-in-out 0.3s, -webkit-box-shadow ease-in-out 0.3s;
+	transition: border-color ease-in-out 0.3s, box-shadow ease-in-out 0.3s;
+	transition: border-color ease-in-out 0.3s, box-shadow ease-in-out 0.3s, -webkit-box-shadow ease-in-out 0.3s;
+}
+
+.custom-checkbox > .form-check-label:hover {
+	border-color: $success;
+	outline: 0;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 4px $success;
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 4px $success;
+}
+
+.custom-checkbox > .form-check-label::after {
+	position: absolute;
+	top: 0.75rem;
+	left: 0.3rem;
+	display: block;
+	width: 0.3rem;
+	height: 0.7rem;
+	content: "";
+	border-top: 2px solid $white;
+	border-right: 2px solid $white;
+	-webkit-transform: scaleX(-1) rotate(135deg);
+	-moz-transform: scaleX(-1) rotate(135deg);
+	-ms-transform: scaleX(-1) rotate(135deg);
+	transform: scaleX(-1) rotate(135deg);
+	-webkit-transform-origin: left top;
+	-moz-transform-origin: left top;
+	-ms-transform-origin: left top;
+	transform-origin: left top;
+}
+
+.custom-checkbox > .form-check-input:checked + .form-check-label {
+	background-color: $success;
+	border: 1px solid $success;
+}
+
+.custom-checkbox > .form-check-input:checked + .form-check-label::after {
+	border-color: $white;
+	-webkit-animation: check 0.5s;
+	-moz-animation: check 0.5s;
+	-o-animation: check 0.5s;
+	animation: check 0.5s;
+}
+
+.custom-checkbox > span.custom-checkbox-text {
+	position: relative;
+	top: 0.125rem;
+	font-size: 1rem;
+}
+
+/// coustom check box css end
+// Custom Radio start
+.form-group.animated > .custom-radio:first-child {
+	margin-top: 2.0625rem;
+}
+
+.form-group.animated > .custom-radio:last-child {
+	margin-bottom: 0rem;
+}
+
+.form-group.animated.d-flex > .custom-radio {
+	margin-top: 2.0625rem;
+	margin-bottom: 0rem;
+	margin-right: 1rem;
+}
+
+.custom-radio {
+	margin-bottom: 1rem;
+	display: block;
+	position: relative;
+	padding-left: 0rem;
+}
+
+.custom-radio > label {
+	display: inline-block;
+	position: relative;
+	top: 0.1rem;
+	font-size: 1rem;
+}
+
+.custom-radio > input[type="radio"] {
+	-webkit-appearance: none;
+	appearance: none;
+	margin: 0;
+	margin-right: 0.4rem;
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 1rem;
+	width: 1.4rem;
+	height: 1.4rem;
+	border-radius: 100%;
+	position: relative;
+	border: 1px solid $gray-400;
+	background: $white;
+	-webkit-transition: border-color ease-in-out 0.3s, box-shadow ease-in-out 0.3s;
+	transition: border-color ease-in-out 0.3s, -webkit-box-shadow ease-in-out 0.3s;
+}
+
+.custom-radio > .form-check-input:checked {
+	background: $success;
+	border: 1px solid $success;
+}
+
+.custom-radio > input[type="radio"]::before {
+	content: "";
+	position: absolute;
+	width: 0.5em;
+	height: 0.5em;
+	background: $white;
+	left: 50%;
+	top: 50%;
+	border-radius: 100%;
+	transform: translate(-50%, -50%) scale(0);
+	transition: transform 0.3s cubic-bezier(0.52, -0.5, 0.5, 1.5);
+}
+
+.custom-radio > input[type="radio"]:checked::before {
+	transform: translate(-50%, -50%) scale(1);
+}
+
+.custom-radio > input[type="radio"]:hover {
+	border-color: $success;
+	outline: 0;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 4px $success;
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 4px $success;
+}
+
+// Block Radio
+.form-group.animated > .block > .btn:first-child {
+	margin-top: 2.0625rem;
+}
+
+.form-group.animated > .block > .btn:last-child {
+	margin-bottom: 0rem;
+}
+
+.form-group.animated > .block.d-flex > .btn {
+	margin-top: 2.0625rem;
+	margin-bottom: 0rem;
+}
+
+.block {
+	transition: 0.3s all;
+	margin-left: -0.5rem;
+	margin-right: -0.5rem;
+}
+
+.block > label {
+	text-align: left;
+}
+
+.block > .btn {
+	margin: 0.5rem;
+	padding: 1rem 1rem 0rem 1rem;
+	border: 1px solid $gray-400;
+	cursor: pointer;
+	-webkit-transition: border-color ease-in-out 0.3s, box-shadow ease-in-out 0.3s;
+	transition: border-color ease-in-out 0.3s, -webkit-box-shadow ease-in-out 0.3s;
+}
+
+.block > label > .form-check > .form-check-input {
+	position: absolute;
+}
+
+.block > .btn:hover {
+	outline: 0;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px $success;
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px $success;
+}
+
+.block-radio-heading {
+	display: block;
+	padding-left: 2rem;
+	padding-bottom: 0.5rem;
+}
+
+.block-body {
+	font-size: $font-size-base;
+	display: block;
+}
+
+.block > .active {
+	border: 1px solid #3eb650;
+}
+
+/// block css end
+// Switch css start
+.form-group.animated > .checkbox-switch:first-child {
+	margin-top: 2.0625rem;
+}
+
+.form-group.animated > .checkbox-switch:last-child {
+	margin-bottom: 0rem;
+}
+
+.form-group.animated.d-flex > .checkbox-switch {
+	margin-top: 2.0625rem;
+	margin-bottom: 0rem;
+}
+
+.switch.checkbox-switch {
+	padding-left: 0;
+}
+
+.switch.checkbox-switch label, .checkbox-inline.checkbox-switch {
+	font-size: 1rem;
+	margin-right: 1rem;
+	display: inline-block;
+	position: relative;
+	padding-left: 0;
+	cursor: pointer;
+}
+
+.switch.checkbox-switch label input, .checkbox-inline.checkbox-switch input {
+	display: none;
+}
+
+.switch.checkbox-switch label span, .checkbox-inline.checkbox-switch span {
+	width: 2.25rem;
+	border-radius: 1.25rem;
+	height: 1.25rem;
+	border: 1px solid #dbdbdb;
+	background-color: rgb(255, 255, 255);
+	border-color: rgb(223, 223, 223);
+	box-shadow: rgb(223, 223, 223) 0px 0px 0px 0px inset;
+	transition: border 0.4s ease 0s, box-shadow 0.4s ease 0s;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 5px;
+}
+
+.switch.checkbox-switch label span::before, .checkbox-inline.checkbox-switch span::before {
+	display: inline-block;
+	width: 1rem;
+	height: 1rem;
+	border-radius: 50%;
+	background: rgb(255, 255, 255);
+	content: " ";
+	top: 0;
+	position: relative;
+	left: 0;
+	transition: all 0.3s ease;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+.switch.checkbox-switch label > input:checked + span::before, .checkbox-inline.checkbox-switch > input:checked + span::before {
+	left: 17px;
+}
+
+/* Switch Success */
+.switch.checkbox-switch.switch-success label > input:checked + span, .checkbox-inline.checkbox-switch.switch-success > input:checked + span {
+	background-color: $success;
+	border-color: $success;
+	box-shadow: $success 0px 0px 0px 8px inset;
+	transition: border 0.4s ease 0s, box-shadow 0.4s ease 0s, background-color 1.2s ease 0s;
+}
+
+.switch.checkbox-switch.switch-success label > input:checked:disabled + span, .checkbox-inline.checkbox-switch.switch-success > input:checked:disabled + span {
+	background-color: lighten($success, 30%);
+	border-color: lighten($success, 30%);
+	box-shadow: lighten($success, 30%) 0px 0px 0px 8px inset;
+}
+
+/* Switch Danger */
+.switch.checkbox-switch.switch-danger label > input:checked + span, .checkbox-inline.checkbox-switch.switch-danger > input:checked + span {
+	background-color: $danger;
+	border-color: $danger;
+	box-shadow: $danger 0px 0px 0px 8px inset;
+	transition: border 0.4s ease 0s, box-shadow 0.4s ease 0s, background-color 1.2s ease 0s;
+}
+
+.switch.checkbox-switch.switch-danger label > input:checked:disabled + span, .checkbox-inline.checkbox-switch.switch-danger > input:checked:disabled + span {
+	background-color: lighten($danger, 30%);
+	border-color: lighten($danger, 30%);
+	box-shadow: lighten($danger, 30%) 0px 0px 0px 8px inset;
+	transition: border 0.4s ease 0s, box-shadow 0.4s ease 0s, background-color 1.2s ease 0s;
+}
+
+/* Switch Warning */
+.switch.checkbox-switch.switch-warning label > input:checked + span, .checkbox-inline.checkbox-switch.switch-warning > input:checked + span {
+	background-color: $warning;
+	border-color: $warning;
+	box-shadow: $warning 0px 0px 0px 8px inset;
+	transition: border 0.4s ease 0s, box-shadow 0.4s ease 0s, background-color 1.2s ease 0s;
+}
+
+.switch.checkbox-switch.switch-warning label > input:checked:disabled + span, .checkbox-inline.checkbox-switch.switch-warning > input:checked:disabled + span {
+	background-color: lighten($warning, 30%);
+	border-color: lighten($warning, 30%);
+	box-shadow: lighten($warning, 30%) 0px 0px 0px 8px inset;
+	transition: border 0.4s ease 0s, box-shadow 0.4s ease 0s, background-color 1.2s ease 0s;
+}
+
+/// switch css end here

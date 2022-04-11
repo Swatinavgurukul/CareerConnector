@@ -1,0 +1,105 @@
+// tick icon
+.tick-icon {
+	position: relative;
+	top: -0.1rem;
+	display: inline-block;
+	width: 0.4rem;
+	height: 0.8rem;
+	margin: 0rem 0.25rem;
+	border-left: 2px solid currentColor;
+	border-bottom: 2px solid currentColor;
+	-webkit-transform: scaleX(-1) rotate(-45deg);
+	transform: scaleX(-1) rotate(-45deg);
+}
+
+// arrow icon
+.arrow-icon {
+	display: inline-block;
+	border-right: 2px solid currentColor;
+	border-bottom: 2px solid currentColor;
+	position: relative;
+	left: 0.1rem;
+	top: 0.3rem;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+// down arrow
+.arrow-down {
+	width: 0.75rem;
+	height: 0.75rem;
+	margin-right: 0.25rem;
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+// down arrow small
+.arrow-down-sm {
+	width: 0.5rem;
+	height: 0.5rem;
+	margin-right: 0.25rem;
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+// arrow collapsed
+.collapsed > .arrow-down, .collapsed > .arrow-down-sm {
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
+// arrow up
+.arrow-up {
+	width: 0.75rem;
+	height: 0.75rem;
+	margin-right: 0.25rem;
+	-webkit-transform: rotate(225deg);
+	transform: rotate(225deg);
+}
+
+// arrow up
+.arrow-up-sm {
+	width: 0.5rem;
+	height: 0.5rem;
+	margin-right: 0.25rem;
+	-webkit-transform: rotate(225deg);
+	transform: rotate(225deg);
+}
+
+// left arrow
+.arrow-left {
+	width: 0.75rem;
+	height: 0.75rem;
+	margin-left: 0.25rem;
+	-webkit-transform: rotate(135deg);
+	transform: rotate(135deg);
+}
+
+// left small arrow
+.arrow-left-sm {
+	width: 0.5rem;
+	height: 0.5rem;
+	margin-left: 0.25rem;
+	-webkit-transform: rotate(135deg);
+	transform: rotate(135deg);
+}
+
+// right arrow
+.arrow-right {
+	width: 0.75rem;
+	height: 0.75rem;
+	margin-right: 0.25rem;
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
+// right small arrow
+.arrow-right-sm {
+	width: 0.5rem;
+	height: 0.5rem;
+	margin-right: 0.25rem;
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}

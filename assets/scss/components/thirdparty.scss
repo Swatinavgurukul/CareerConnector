@@ -1,0 +1,21 @@
+.react-datepicker-wrapper {
+	width: 100%;
+}
+
+.react-datepicker__input-container {
+	input {
+		min-height: 2.625rem;
+	}
+	input:focus {
+		box-shadow: none;
+		border-color: $green;
+	}
+}
+
+.react-datepicker__tab-loop {
+	.react-datepicker {
+		.react-datepicker__triangle {
+			left: 4rem !important;
+		}
+	}
+}
